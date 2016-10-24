@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lester Ando</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<style type="text/css">
+		.navbar-custom {
+			background-color: #194775;
+			border-radius: 0;
+		}
+
+		.navbar-custom .navbar-nav > li > a  {
+			color: #fff;
+		}
+		.navbar-custom .navbar-nav > li > a:hover {
+			color: #ffff7f;
+		}
+
+		.navbar-custom .navbar-brand {
+			color: #fff;
+		}
+		.navbar-custom .navbar-brand:hover {
+			color: #ffff7f;
+		}
+
+		.img-responsive{
+			margin: 0 auto;
+		}
+		
+		.center-reponsive {
+			text-align: center;
+		}
+		
+		.thumbnail-custom {
+			width: 100%; 
+			max-width: xxx;
+			height: auto;
+		}
+		
+		.intro {
+			font-family: 'Questrial', sans-serif;
+			text-align: center;
+			line-height: 150%;
+		}
+		h5 {
+			font-family: 'Open Sans', sans-serif;
+			line-height: 140%;
+		}
+		
+		.margin-div {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+		.th-custom {
+			background-color: #edf0f0;
+		}
+		
+		
+	</style>
+	<script>
+		$(document).on('click','.navbar-collapse.in',function(e) {
+			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+				$(this).collapse('hide');
+			}
+		});	
+	</script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span> 
+		  </button>
+		  <a class="navbar-brand navbar-custom" href="#">Lester Ando</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navBar">
+		  <ul class="nav navbar-nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#skillset">Skillset</a></li> 
+			<li><a href="#portfolio">Portfolio</a></li> 
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span> Contact Me</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	
+	<div style="background-color: #f7f9f9; margin-top: 50px;">
+		<div class="container" style="padding: 50px;">
+			<img src="http://i.imgur.com/gCNk6CA.png" title="source: imgur.com" class="img-circle img-responsive" alt="My Graduation Pic" width="170" height="170" />
+			<br>
+			<h4 class="text-info intro">"Hi there! I am Lester Ando. I have a knack for making sense of data, concepts, and ideas - and use them to achieve a goal. I am a computer science undergraduate and an aspiring Data Scientist. I have worked with <code>mobile and web development</code>, <code>RESTful APIs</code>, and familiar with some general concepts in <code>statistical computing</code> and <code>big data</code>."</h4>
+		</div>
+	</div>
+
+	<div style="background-color: #fdfdfd">
+		<div class="container margin-div" id="about">
+			<div class="row">
+				<div class="col-sm-10">
+					<span class="glyphicon glyphicon-education"></span><b> Master in Applied Statistics (9 units)</b>, <i>October 2015 - March 2016</i>
+					<br>
+					Polytechnic University of the Philippines
+					<br>
+					Courses Taken: Statistical Data Processing, Managerial Economics, Research Seminar
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-sm-10">
+					<span class="glyphicon glyphicon-education"></span><b> Bachelor of Science in Computer Science</b>, <i>2015</i>
+					<br>
+					New Era University
+					<br>
+					Courses Taken: Software Engineering, System Analysis and Design, Object-Oriented Programming, Database Management System, Automata Theory, Data Structures and Algorithm
+				</div>
+			</div>		
+		</div>	
+	</div>
+	
+	<div style="background-color: #f7f9f9;">
+		<div class="container margin-div" id="skillset">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-3 center-reponsive">
+					<i class="fa fa-code fa-5x" aria-hidden="true"></i>
+					<h3><code>Languages</code></h3>
+					<h5>Java, Javascript, AngularJS, PHP, Python, C++</h5>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 center-reponsive">
+					<i class="fa fa-rocket fa-5x" aria-hidden="true"></i>
+					<h3><code>Development</code></h3>
+					<h5>Mobile and Web Development, RESTful API development, Documentation, Automated Testing</h5>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 center-reponsive">
+					<i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
+					<h3><code>Data Science</code></h3>
+					<h5>R, RStudio, IPython Notebooks, IBM SPSS, Statistical Data Processing, Statistical Modelling, Hypothesis Testing</h5>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 center-reponsive">
+					<i class="fa fa-bullhorn fa-5x" aria-hidden="true"></i>
+					<h3><code>Communication</code></h3>
+					<h5>Strong written and verbal communication and presentation skills; Fluency in English</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div style="background-color: #fdfdfd;">
+		<div class="container margin-div" id="portfolio">
+			<h3 class="intro">MY SAMPLE WORK</h3>
+			<br>
+			<div class="row">
+				<!-- Ecoflight Travel and Tour Content -->
+				<div class="col-xs-12 col-sm-12 col-md-4 center-reponsive" data-toggle="modal" data-target="#ecoflight">
+					<div class="thumbnail th-custom">
+						<img src="http://imgur.com/qSw6pP4.png" title="Ecoflight Travel and Tour Website" width="450" height="300" class="thumbnail-custom">
+					</div>
+					<h5>Ecoflight Travel and Tour</h5>
+				</div>
+				<div class="modal fade" id="ecoflight" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Ecoflight Travel and Tour Website</h4>
+							</div>
+							<div class="modal-body">
+								<img src="http://imgur.com/jKo3Vlv.png" class="thumbnail-custom">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>													
+					</div>
+				</div>
+				<!-- GoldEast Marketing Inc. Content -->
+				<div class="col-xs-12 col-sm-12 col-md-4 center-reponsive" data-toggle="modal" data-target="#goldeast">
+					<div class="thumbnail th-custom">
+						<img src="http://i.imgur.com/08nGmv1.png" title="Ecoflight Travel and Tour Website" width="450" height="300" class="thumbnail-custom">					
+					</div>
+					<h5>GoldEast Marketing Inc.</h5>
+				</div>
+				<div class="modal fade" id="goldeast" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">GoldEast Marketing Inc. Website</h4>
+							</div>
+							<div class="modal-body">
+								<img src="http://i.imgur.com/Wjrj5uo.png" class="thumbnail-custom">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>													
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	
+	<div style="background-color: #0f2a46;">
+		<div class="container" id="contact">
+			<i class="fa fa-facebook-square fa-3x fa-inverse" aria-hidden="true"></i>
+			<a href="https://ph.linkedin.com/in/lesterando" target='_blank'><i class="fa fa-linkedin-square fa-3x fa-inverse" aria-hidden="true"></i></a>
+			<i class="fa fa-github-square fa-3x fa-inverse" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div style="background-color: #d21919; height: 2px;">
+	</div>
+</body>
+</html>
