@@ -50,7 +50,7 @@
 			width: 100%;
 		}
 		.modal-header {
-			background-color: #000033;
+			background-color: #101010;
 		}
 		.modal-title {
 			color: white;
@@ -76,10 +76,10 @@
 		}
 	</style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">	
 	
 	<!-- NAVIGATION -->
-	<nav class="navbar navbar-fixed-top navbar-inverse ">
+	<nav class="navbar navbar-fixed-top navbar-inverse">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -95,7 +95,7 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-target">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="#about">About <span class="sr-only">(current)</span></a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#services">Services</a></li>
@@ -105,7 +105,7 @@
 	</nav>
 	
 	<!-- HOME SECTION -->
-	<div class="container" id="home">
+	<div class="container" id="about">
 		<div class="jumbotron">
 			<div class="row">
 				<div class="col-xs-12 col-sm-3 col-md-3">
@@ -264,6 +264,9 @@
 		</div>
 	</div>
 	
+	<div id="services">
+	</div>
+	
 	<!-- FOOTER SECTION -->
 	<footer class="footer footer-background footer-padding" id="contact">
 		<div class="container">
@@ -305,6 +308,21 @@
 						$('.navbar-collapse.in').collapse('hide');
 				});
 		});	
+		
+		$(document).ready(function(){
+			$('body').scrollspy({target: ".navbar", offset: 50});
+			$("#navbar-target a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						window.location.hash = hash;
+					});
+				}
+			});
+		});		
 	</script>
 </body>
 </html>
